@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair Display:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --lavender:#9184dd;
+    --orange:#d9e9f3;
+    --pink:#e7b1bc;
+    --pink2:#f06682;
+    --black: #1d1c1c;
+    --white: #faf7ec;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+ /*font-family:'Playfair Display';*/
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+ /* text-transform: capitalize;*/
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: var(--white);
+}
+
+section{
+  padding: 3rem 7%;
+}
+
+.heading{
+  font-size: 4rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+
+.heading span{
+  color: var(--lavender);
+  text-transform: uppercase;
+}
+
+
+/* header */
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: var(--orange);
+  box-shadow: var(--box-shadow);
+}
+
+.header h3 {
+  font-size: 2.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a{
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a:hover,
+.header .icons div:hover{
+  color: var(--lavender);
+  
+}
+
+
+
+/* header ends */
+
+/* home */
+
+.Introduction{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  position: relative;
+}
+
+.Introduction .content{
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.Introduction .content h3{
+  font-size: 6rem;
+  color: var(--black);
+}
+
+.Introduction .content h3 span{
+  color: var(--lavender);
+}
+
+.Introduction .content p{
+  font-size: 1.7rem;
+  color: var(--light-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.Introduction .image{
+  flex: 1 1 40rem;
+}
+
+.Introduction.image img{
+  width: 100%;
+  padding: 4rem;
+}
+
+.custom-shape-divider-bottom-1684324473 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1684324473 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 107px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1684324473 .shape-fill {
+  fill: var(--pink);
+}
+
+/* end */
+
+/* about us */
+
+.Motherhood{
+  background: var(--pink);
+}
+
+.Motherhood .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.Motherhood .row .image{
+  flex: 1 1 50rem;
+}
+
+.Motherhood .row .image img{
+  width: 100%;
+  height: 100%;
+}
+
+.Motherhood .row .content{
+  flex: 1 1 40rem;
+}
+
+.Motherhood .row .content h3{
+  font-size: 3.5rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.Motherhood .row .content p{
+  font-size: 1.7rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+/* end */
+
+/* Roles */
+
+.Roles .content {
+  padding: 3rem 2rem;
+  text-align: center;
+
+}
+
+.Roles .content img{
+  height: 50rem;
+}
+
+.Roles .content h3{
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  color: var(--pink2);
+}
+.Roles .content p{
+  font-size: 1.7rem;
+  color: var(--black);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+/* end */
+
+/* contact */
+.Conclusion{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  position: relative;
+}
+
+.Conclusion .content{
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.Conclusion h3{
+  font-size: 2rem;
+  color: var(--pink2);
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.Conclusion .content p{
+  font-size: 1.7rem;
+  color: var(--light-color);
+  line-height: 1.8;
+ 
+}
+
+.Conclusion img{
+  width: 40%;
+  padding: 4rem;
+  float: left;
+}
+
+/* end */
+
+/* footer */
+footer {
+  background: var(--orange);
+}
+footer .footer-content p{
+  background: var(--orange);
+  color: var(--black);
+  text-align: center;
+  padding: 1%;
+}
+
+
+
+
+
+/* media query */
+
+@media (max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding: 2rem 3rem;
+  }
+
+  section{
+    padding: 3rem;
+  }
+
+}
+
+@media (max-width:768px){
+
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--white);
+  }
+
+  .header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+
+  .header .navbar a{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+
+  .home .content h3{
+    font-size: 4.5rem;
+  }
+
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+  .home .content h3{
+    font-size: 3.5rem;
+  }
+}
